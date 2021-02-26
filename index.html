@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="cipher.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="center">
+        <div class="encrypt">
+          <input class="cipher-input" placeholder="Введите исходный текст" />
+          <button class="button" onclick="encrypt()">Зашифровать</button>
+          <p class="cipher-output output" id="encrypt-copy"></p>
+        </div>
+
+        <div class="decrypt">
+          <input
+            class="decrypt-input"
+            placeholder="Введите зашифрованный текст"
+          />
+          <button class="button" onclick="decrypt()">Расшифровать</button>
+          <p class="decrypt-output output" id="decrypt-copy"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

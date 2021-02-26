@@ -1,0 +1,33 @@
+{
+  "name": "cipher",
+  "version": "1.0.0",
+  "description": "Cipher programm",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "mac": "electron-builder --mac"
+  },
+  "keywords": [],
+  "author": "Evan",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.3.0",
+    "electron-packager": "^15.2.0",
+    "electron-builder": "^22.9.1"
+  },
+  "build": {
+    "appId": "cipher",
+    "mac": {
+      "category": "cipher"
+    }
+  },
+  "dependencies": {
+    "crypto-js": "^4.0.0",
+    "electron-log": "^4.3.2",
+    "electron-updater": "^4.3.5",
+    "update-electron-app": "^2.0.1"
+  }
+}
