@@ -1,5 +1,5 @@
 const CryptoJS = require('crypto-js');
-const key = 'abdhfks';
+const key = 'Well';
 
 function encrypt() {
 
