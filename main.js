@@ -1,9 +1,6 @@
 const { app, BrowserWindow } = require('electron')
 
-require('update-electron-app')({
-  repo: 'EvanEnev/program.ly',
-  updateInterval: '5 minutes',
-})
+require('update-electron-app')({})
 
 function createWindow () {
   const win = new BrowserWindow({
