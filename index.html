@@ -2,10 +2,19 @@
 <html>
   <head>
     <script type="text/javascript" src="cipher.js"></script>
+    <script>
+      const { ipcRenderer } = require('electron');
+ipcRenderer.on('message', function (event, text) {
+  console.log('Message from updater:', text);
+});
+    </script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="wrapper">
+      <div class="logo">
+        <h1>Program.ly</h1>
+      </div>
       <div class="center">
         <div class="encrypt">
           <input class="cipher-input" placeholder="Введите исходный текст" />

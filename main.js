@@ -37,12 +37,6 @@ app.on('activate', () => {
 });
 
 
-const { ipcRenderer } = require('electron');
-ipcRenderer.on('message', function (event, text) {
-  console.log('Message from updater:', text);
-});
-
-
 const sendStatusToWindow = (text) => {
   log.info(text);
   if (mainWindow) {
